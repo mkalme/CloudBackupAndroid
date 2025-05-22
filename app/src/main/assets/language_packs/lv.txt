@@ -1,0 +1,212 @@
+lv:Latviešu (Latvian)
+## End header
+
+## Miscellaneous
+localFolderExplorer.internal:Iekšējā krātuve
+localFolderExplorer.sd:SD karte
+
+## All activities
+folderBrowserActivity.title:Pārlūkojiet mapi
+folderBrowserActivity.selectCurrentFolderButton:Izvēlēties šo mapi
+folderBrowserActivity.closeButton:Aizvērt
+
+settingsActivity.title:Rediģēt iestatījumus
+settingsActivity.editModeEnabledSwitch:Rediģēšana iespējota
+settingsActivity.automaticUpdatingEnabledSwitch:Autom. dublējums ieslēgts
+settingsActivity.languageText:Valoda
+settingsActivity.monthlyMobileDataLimitTextView:Mēneša mobilo datu limits
+settingsActivity.usedText:Izmantoti
+settingsActivity.overLimitText:Pārsniegts
+settingsActivity.saveButton:Saglabāt
+settingsActivity.cancelButton:Atcelt
+
+updateHistoryActivity.title.enabled:Dublējum vērsture
+updateHistoryActivity.title.disabled:Skatīt dublējuma vērsturi
+updateHistoryActivity.clearHistoryButton:Notīrīt
+updateHistoryActivity.saveButton:Saglabāt
+updateHistoryActivity.cancelButton.enabled:Atcelt
+updateHistoryActivity.cancelButton.disabled:Aizvērt
+updateHistoryActivity.clearPrompt:Vai esat pārliecināts, ka vēlaties notīrīt visu dublējuma vēsturi?
+
+updateAttemptActivity.title:Skatīt dublējumu
+updateAttemptActivity.localFolderTextHint:Vietājā mape
+updateAttemptActivity.driveFolderTextHint:Diska mape
+updateAttemptActivity.updateBeginTextView:Dublējums sākās
+updateAttemptActivity.updateFinishedTextView:Dublējums beidzās
+updateAttemptActivity.typeTextView:Dublējuma tips
+updateAttemptActivity.type.automatic:Automātisks
+updateAttemptActivity.type.userInitiated:Lietotāja veikts
+updateAttemptActivity.resultTextView:Rezultāts
+updateAttemptActivity.result.successful:Veiksmīgi
+updateAttemptActivity.result.unsuccessful:Neveiksmīgi
+updateAttemptActivity.result.partiallySuccessful:Daļēji veiksmīgi
+updateAttemptActivity.result.unfinished:Nepabeigts
+updateAttemptActivity.successfulFilesTextView:Augšupielādēti faili
+updateAttemptActivity.successfulFilesButton:Skatīt failus
+updateAttemptActivity.successfulFilesView.title:failus
+updateAttemptActivity.unsuccessfulFilesTextView:Neveiksmīgi augšupielādēti faili
+updateAttemptActivity.unsuccessfulFilesButton:Skatīt failus
+updateAttemptActivity.unsuccessfulFilesView.title:failus
+updateAttemptActivity.errorButton:Skatīt kļūdas
+updateAttemptActivity.errorView.title:kļūdas
+updateAttemptActivity.closeButton:Aizvērt
+
+mainActivity.title:Mākoņa Dublēšana
+mainActivity.openSettingsButton:Iestatījumi
+mainActivity.openHistoryButton:Dublējuma vēsture
+mainActivity.addNewUpdatePlanButton:Jauns dublējuma plāns
+
+cloudProviderSettingsActivity.title.enabled:Rediģēt
+cloudProviderSettingsActivity.title.disabled:Skatīt
+cloudProviderSettingsActivity.saveButton:Saglabāt
+cloudProviderSettingsActivity.cancelButton.enabled:Atcelt
+cloudProviderSettingsActivity.cancelButton.disabled:Aizvērt
+
+textEditorActivity.title.enabled:Rediģēt
+textEditorActivity.title.disabled:Skatīt
+textEditorActivity.saveButton:Save
+textEditorActivity.cancelButton.enabled:Atcelt
+textEditorActivity.cancelButton.disabled:Aizvērt
+
+updatePlanActivity.title.enabled:Rediģēt dublējuma plānu
+updatePlanActivity.title.disabled:Skatīt deblējuma plānu
+updatePlanActivity.nameTextHint:Nosaukums
+updatePlanActivity.folderTextHint:Mape
+updatePlanActivity.browseButton:Pārlūkot
+updatePlanActivity.addNewSchemeButton:Jauna shēma
+updatePlanActivity.saveButton:Saglabāt
+updatePlanActivity.cancelButton.enabled:Atcelt
+updatePlanActivity.cancelButton.disabled:Aizvērt
+updatePlanActivity.removeThisButton:Noņemt šo
+updatePlanActivity.removePrompt:Vai esat pārliecināts, ka vēlaties noņemt šo dublējuma plānu?
+
+schemeActivity.title.enabled:Rediģēt shēmu
+schemeActivity.title.disabled:Skatīt shēmu
+schemeActivity.nameTextHint:Nosaukums
+schemeActivity.driveFolderHint:Diska mape
+schemeActivity.fileFilterButton.enabled:Rediģēt failu filtru
+schemeActivity.fileFilterButton.disabled:Skatīt failu filtru
+schemeActivity.networkTypeOnUploadTextView:Tīkla pieslēgums dublēšanai
+schemeActivity.networkTypeSpinner.wifi:Wi-Fi
+schemeActivity.networkTypeSpinner.mobileData:Mobilie dati
+schemeActivity.networkTypeSpinner.both:Abi
+schemeActivity.comparisonMethodTextView:Salīdzināšanas metodes
+schemeActivity.fileNameCheckBox:Faila vārds
+schemeActivity.fileSizeCheckBox:Faila izmērs
+schemeActivity.seeHistoryButton:Skatīt vēsturi
+schemeActivity.addNewScheduleButton:Jauns regulārs ieplānojums
+schemeActivity.saveButton:Saglabāt
+schemeActivity.cancelButton.enabled:Atcelt
+schemeActivity.cancelButton.disabled:Aizvērt
+schemeActivity.removeThisButton:Noņemt šo
+schemeActivity.removePrompt:Vai esat pārliecināts, ka vēlaties noņemt šo shēmu?
+schemeActivity.removeSchedulePrompt:Vai esat pārliecināts, ka vēlaties noņemt šo regulāro ieplānojumu?
+schemeActivity.seeDates.lastUpdated:Pēdējo reizi dublēts
+schemeActivity.seeDates.nextUpdate:Nākamā ieplānotā dublēšanas reize
+schemeActivity.seeDates.never:Nekad
+
+## All dialogs
+fileFilterDialog.title.enabled:Rediģēt failu filtru
+fileFilterDialog.title.disabled:Skatīt failu filtru
+fileFilterDialog.fileNameFilterTextView:Failu nosaukumu filtrs
+fileFilterDialog.minimumFileSizeTextView:Mazākais faila izmērs
+fileFilterDialog.maximumFileSizeTextView:Lielākais faila izmērs (neiekļauts)
+fileFilterDialog.cancelButton:Atcelt
+fileFilterDialog.okButton:Labi
+
+scheduleDialog.title.enabled:Rediģēt regulāro ieplānojumu
+scheduleDialog.title.disabled:Skatīt regulāro ieplānojumu
+scheduleDialog.intervalTextView:Intervāls (ik pēc...)
+scheduleDialog.typeSpinner.daily:Katru dienu
+scheduleDialog.typeSpinner.weekly:Katru nedēļu
+scheduleDialog.typeSpinner.monthly:Katru mēnesi
+scheduleDialog.typeSpinner.yearly:Katru gadu
+scheduleDialog.timeOfDayTextView:Dienas laiks
+scheduleDialog.selectTime:Izmainīt laiku
+scheduleDialog.changeButton:Mainīt
+scheduleDialog.cancelButton:Atcelt
+scheduleDialog.okButton:Labi
+
+scheduleDialog.weekly.dayOfTheWeekTextView:Diena nedēļā
+scheduleDialog.weekly.weekDaySpinner.monday:Pirmdiena
+scheduleDialog.weekly.weekDaySpinner.tuesday:Otrdiena
+scheduleDialog.weekly.weekDaySpinner.wednesday:Trešdiena
+scheduleDialog.weekly.weekDaySpinner.thursday:Ceturtdiena
+scheduleDialog.weekly.weekDaySpinner.friday:Piektdiena
+scheduleDialog.weekly.weekDaySpinner.saturday:Sestdiena
+scheduleDialog.weekly.weekDaySpinner.sunday:Svētdiena
+
+scheduleDialog.monthly.dayOfTheMonthTextView:Diena mēnesī
+
+scheduleDialog.yearly.dayOfTheYearTextView:Diena gadā
+scheduleDialog.yearly.monthSpinner.january:Janvāris
+scheduleDialog.yearly.monthSpinner.february:Februāris
+scheduleDialog.yearly.monthSpinner.march:Marts
+scheduleDialog.yearly.monthSpinner.april:Aprīlis
+scheduleDialog.yearly.monthSpinner.may:Maijs
+scheduleDialog.yearly.monthSpinner.june:Jūnijs
+scheduleDialog.yearly.monthSpinner.july:Jūlijs
+scheduleDialog.yearly.monthSpinner.august:Augusts
+scheduleDialog.yearly.monthSpinner.september:Septembris
+scheduleDialog.yearly.monthSpinner.october:Oktobris
+scheduleDialog.yearly.monthSpinner.november:Novembris
+scheduleDialog.yearly.monthSpinner.december:Decembris
+
+promptDialog.yesButton:Jā
+promptDialog.noButton.enabled:Nē
+promptDialog.noButton.disabled:Labi
+
+## All layouts
+googleCloudProviderSettings.bucketTextHint:Krātuves (bucket) nosaukums
+googleCloudProviderSettings.rootFolderTextHint:Pamata mape
+googleCloudProviderSettings.credentialsTextView:Autentifikācijas dati
+googleCloudProviderSettings.editCredentialsButton.enabled:Rediģēt autentifikācijas datus
+googleCloudProviderSettings.editCredentialsButton.disabled:Skatīt autentifikācijas datus
+googleCloudProviderSettings.editCredentialsActivity:autentifikācijas datus
+
+amazonCloudProviderSettings.bucketTextHint:Krātuves (bucket) nosaukums
+amazonCloudProviderSettings.rootFolderTextHint:Pamata mape
+amazonCloudProviderSettings.accessKeyTextHint:Piekļuves atslēga
+amazonCloudProviderSettings.secretKeyTextHint:Slepenā atslēga
+
+demoCloudProviderSettings.rootFolderTextHint:Pamata mape
+demoCloudProviderSettings.simulatedUploadRateTextView:Simulēts augšupielādes ātrums (sekundē)
+demoCloudProviderSettings.simulatedLatencyTextView:Simulēts latentums (milisekundes)
+demoCloudProviderSettings.uploadedFilesTextView:Augšupielādētie faili
+demoCloudProviderSettings.introduceRandomErrors:Atļaut nejaušas kļūdas
+demoCloudProviderSettings.trackUploadedFiles:Saglabāt augšupielādētos failus
+demoCloudProviderSettings.editUploadedFilesButton.enabled:Rediģēt augšupielādētos failus
+demoCloudProviderSettings.editUploadedFilesButton.disabled:Skatīt augšupielādētos failus
+demoCloudProviderSettings.editUploadedFilesActivity:augšupielādētos failus
+demoCloudProviderSettings.clearUploadedFilesButton:Notīrīt
+
+## All new items
+updatePlan.new:Jauns dublējuma plāns
+scheme.new:Jauna shēma
+
+## All adapters
+updatePlanAdapter.updateButton:Dublēt
+schemeAdapter.updateButton:Dublēt
+scheduleAdapter.removeButton:Noņemt
+
+## All notifications
+notification.updateBegin.title:Dublējums iesākts
+notification.updateBegin.message:Meklē failus
+notification.updateStop.successful.moreThanZero.message:Faili augšupielādēti
+notification.updateStop.successful.zero.message:Visi faili jau ir atjaunināti
+notification.updateStop.successful.title:Dublējums pabeigts
+notification.updateStop.unsuccessful.title:Atcelts
+notification.fileBeginUpdate.title:Augšupielādē
+notification.fileUpdateCanceled.title:Fails atcels
+notification.fileUpdateCanceled.secondMessage:Atcels
+notification.fileUpdateStop.successful.title:Augšupielādē
+notification.fileUpdateStop.successful.secondMessage:Pabeigts
+notification.fileUpdateStop.unsuccessful.title:Atcelts
+
+## All values
+update.error.noInternetConnection:Nav interneta savienojums
+update.error.inadequateInternetConnection:Nepareizs interneta savienojums
+update.error.monthlyMobileDataExceeded:Pārsniegts mēneša mobilo datu limits
+update.error.directoryDoesNotExist:Mape neeksistē
+update.error.allSchemesUnsuccessful:Visas shēmas ir neveiksmīgas
+update.error.other:Citi

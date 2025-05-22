@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.storage.cloudbackup.gui.view.activity.update.attempt.UpdateAttemptActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    style="@style/Style.CloudBackup.Activity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_update_attempt_localFolderHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:theme="@style/Style.CloudBackup.HintTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_update_attempt_localFolderText"
+            android:hint="@string/activity_update_attempt_localFolderTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_update_attempt_driveFolderHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:enabled="false"
+        android:theme="@style/Style.CloudBackup.HintTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_update_attempt_driveFolderText"
+            android:hint="@string/activity_update_attempt_driveFolderTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/activity_update_attempt_beginUpdateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="-10dp"
+        android:textSize="13sp"
+        style="@style/Style.CloudBackup.TextView.Dark" />
+
+    <EditText
+        android:id="@+id/activity_update_attempt_beginUpdateText"
+        android:hint="@string/activity_update_attempt_beginUpdateTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:enabled="false"
+        android:inputType="text"
+        android:autofillHints=""
+        android:theme="@style/Style.CloudBackup.EditText" />
+
+    <TextView
+        android:id="@+id/activity_update_attempt_finishedUpdateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="-10dp"
+        android:textSize="13sp"
+        style="@style/Style.CloudBackup.TextView.Dark" />
+
+    <EditText
+        android:id="@+id/activity_update_attempt_finishedUpdateText"
+        android:hint="@string/activity_update_attempt_finishedUpdateTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:enabled="false"
+        android:inputType="text"
+        android:autofillHints=""
+        android:theme="@style/Style.CloudBackup.EditText"/>
+
+    <TextView
+        android:id="@+id/activity_update_attempt_typeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="-10dp"
+        android:textSize="13sp"
+        style="@style/Style.CloudBackup.TextView.Dark" />
+
+    <EditText
+        android:id="@+id/activity_update_attempt_typeText"
+        android:hint="@string/activity_update_attempt_typeTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:enabled="false"
+        android:inputType="text"
+        android:autofillHints=""
+        android:theme="@style/Style.CloudBackup.EditText"/>
+
+    <TextView
+        android:id="@+id/activity_update_attempt_resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="-10dp"
+        android:textSize="13sp"
+        style="@style/Style.CloudBackup.TextView.Dark" />
+
+    <EditText
+        android:id="@+id/activity_update_attempt_resultText"
+        android:hint="@string/activity_update_attempt_resultTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:enabled="false"
+        android:inputType="text"
+        android:autofillHints=""
+        android:theme="@style/Style.CloudBackup.EditText"/>
+
+    <TextView
+        android:id="@+id/activity_update_attempt_successfulFilesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="-10dp"
+        android:textSize="13sp"
+        style="@style/Style.CloudBackup.TextView.Dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/activity_update_attempt_successfulFilesText"
+            android:hint="@string/activity_update_attempt_successfulFilesTextDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:enabled="false"
+            android:inputType="text"
+            android:autofillHints=""
+            android:theme="@style/Style.CloudBackup.EditText"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_update_attempt_successfulFilesButton"
+            android:contentDescription="@string/activity_update_attempt_successfulFilesButtonDescription"
+            android:onClick="seeSuccessfulFiles"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-3dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="13sp"
+            style="@style/Style.CloudBackup.Button" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_update_attempt_unsuccessfulFilesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="-10dp"
+        android:textSize="13sp"
+        style="@style/Style.CloudBackup.TextView.Dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/activity_update_attempt_unsuccessfulFilesText"
+            android:hint="@string/activity_update_attempt_unsuccessfulFilesTextDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:enabled="false"
+            android:inputType="text"
+            android:autofillHints=""
+            android:theme="@style/Style.CloudBackup.EditText"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_update_attempt_unsuccessfulFilesButton"
+            android:contentDescription="@string/activity_update_attempt_unsuccessfulFilesButtonDescription"
+            android:onClick="seeUnsuccessfulFiles"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-3dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="13sp"
+            style="@style/Style.CloudBackup.Button" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activity_update_attempt_viewErrorsButton"
+        android:contentDescription="@string/activity_update_attempt_viewErrorsButtonDescription"
+        android:onClick="viewErrorsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        style="@style/Style.CloudBackup.Button" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activity_update_attempt_closeButton"
+        android:contentDescription="@string/activity_update_attempt_closeButtonDescription"
+        android:onClick="close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-4dp"
+        style="@style/Style.CloudBackup.Button" />
+</LinearLayout>

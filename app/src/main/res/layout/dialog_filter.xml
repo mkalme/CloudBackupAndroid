@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialog_filter_fileNameFilterTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        style="@style/Style.CloudBackup.TextView.Dark" />
+
+    <EditText
+        android:id="@+id/dialog_filter_filterEditText"
+        android:hint="@string/dialog_filter_filterEditTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3.5dp"
+        android:layout_marginTop="-6dp"
+        android:singleLine="true"
+        android:autofillHints=""
+        android:theme="@style/Style.CloudBackup.EditText"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/dialog_filter_minimumFileSizeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        style="@style/Style.CloudBackup.TextView.Dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="-3.5dp"
+        android:layout_marginTop="-3.5dp">
+
+        <EditText
+            android:id="@+id/dialog_filter_minFileSizeEditText"
+            android:hint="@string/dialog_filter_minFileSizeEditTextDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberSigned"
+            android:digits="0123456789"
+            android:autofillHints=""
+            android:theme="@style/Style.CloudBackup.EditText"/>
+
+        <Spinner
+            android:id="@+id/dialog_filter_minFileSizeUnitSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Spinner.Light" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_filter_maximumFileSizeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.5dp"
+        android:textSize="14sp"
+        style="@style/Style.CloudBackup.TextView.Dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="-3.5dp"
+        android:layout_marginTop="-3.5dp">
+
+        <EditText
+            android:id="@+id/dialog_filter_maxFileSizeEditText"
+            android:hint="@string/dialog_filter_maxFileSizeEditTextDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:autofillHints=""
+            android:theme="@style/Style.CloudBackup.EditText"/>
+
+        <Spinner
+            android:id="@+id/dialog_filter_maxFileSizeUnitSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Spinner.Light" />
+    </LinearLayout>
+</LinearLayout>

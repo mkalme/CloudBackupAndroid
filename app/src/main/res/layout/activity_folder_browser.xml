@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.storage.cloudbackup.gui.view.activity.folder.browser.FolderBrowserActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="0dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    android:theme="@style/Style.CloudBackup.Activity">
+
+    <TextView
+        android:id="@+id/activity_folder_browser_folder_currentFolderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="2.5dp"
+        android:layout_marginBottom="4.5dp"
+        android:textSize="14sp"
+        style="@style/Style.CloudBackup.TextView.Dark"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_folder_browser_folderRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_folder_browser_selectCurrentFolderButton"
+            android:contentDescription="@string/activity_folder_browser_selectCurrentFolderButtonDescription"
+            android:onClick="selectCurrentFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Button" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_folder_browser_closeButton"
+            android:contentDescription="@string/activity_folder_browser_closeButtonDescription"
+            android:onClick="close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-4dp"
+            style="@style/Style.CloudBackup.Button" />
+    </LinearLayout>
+</LinearLayout>

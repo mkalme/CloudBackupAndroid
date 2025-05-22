@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.storage.cloudbackup.gui.view.activity.updateplan.UpdatePlanActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    style="@style/Style.CloudBackup.Activity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_update_plan_nameTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Style.CloudBackup.HintTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_update_plan_nameText"
+            android:hint="@string/activity_update_plan_nameTextButtonDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_update_plan_folderTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/Style.CloudBackup.HintTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_update_plan_folderText"
+            android:hint="@string/activity_update_plan_folderTextButtonDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_update_plan_browseButton"
+            android:contentDescription="@string/activity_update_plan_browseButtonDescription"
+            android:onClick="browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.5dp"
+            style="@style/Style.CloudBackup.Button"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/activity_update_plan_cloudProviderSelectorContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9.5dp"
+            android:orientation="horizontal"
+            android:gravity="end"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activity_update_plan_addNewSchemeButton"
+        android:contentDescription="@string/activity_update_plan_addNewSchemeButtonDescription"
+        android:onClick="addNewScheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        style="@style/Style.CloudBackup.Button"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_update_plan_schemeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="2.5dp"
+        android:scrollbars="vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_update_plan_saveButton"
+            android:contentDescription="@string/activity_update_plan_saveButtonDescription"
+            android:onClick="save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Button" />
+
+        <View
+            android:id="@+id/activity_update_plan_separator"
+            android:layout_width="9dp"
+            android:layout_height="0dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_update_plan_cancelButton"
+            android:contentDescription="@string/activity_update_plan_closeButtonDescription"
+            android:onClick="cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Button"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_update_plan_removeThisButton"
+            android:contentDescription="@string/activity_update_plan_removeThisButtonDescription"
+            android:onClick="removeThis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-4dp"
+            style="@style/Style.CloudBackup.Button"/>
+    </LinearLayout>
+</LinearLayout>

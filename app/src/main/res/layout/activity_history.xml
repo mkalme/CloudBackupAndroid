@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.storage.cloudbackup.gui.view.activity.history.HistoryActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    style="@style/Style.CloudBackup.Activity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_history_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="bottom">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_history_saveButton"
+            android:contentDescription="@string/activity_history_saveButtonDescription"
+            android:onClick="save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Button" />
+
+        <View
+            android:id="@+id/activity_history_separator"
+            android:layout_width="9dp"
+            android:layout_height="0dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_history_cancelButton"
+            android:contentDescription="@string/activity_history_closeButtonDescription"
+            android:onClick="cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Button" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_history_clearHistoryButton"
+            android:contentDescription="@string/activity_history_clearHistoryButtonDescription"
+            android:onClick="clearHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-4dp"
+            style="@style/Style.CloudBackup.Button" />
+    </LinearLayout>
+</LinearLayout>

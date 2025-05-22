@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.storage.cloudbackup.gui.view.activity.scheme.SchemeActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    style="@style/Style.CloudBackup.Activity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_scheme_nameTextHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Style.CloudBackup.HintTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_scheme_nameText"
+            android:hint="@string/activity_scheme_nameTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_scheme_driveFolderTextHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/Style.CloudBackup.HintTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_scheme_driveFolderText"
+            android:hint="@string/activity_scheme_driveFolderTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activity_scheme_fileFilterButton"
+        android:contentDescription="@string/activity_scheme_fileFilterButtonDescription"
+        android:onClick="openFilterDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-8dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginTop="11dp"
+        style="@style/Style.CloudBackup.Button"/>
+
+    <TextView
+        android:id="@+id/activity_scheme_networkTypeOnUploadTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textSize="14sp"
+        style="@style/Style.CloudBackup.TextView.Dark" />
+
+    <Spinner
+        android:id="@+id/activity_scheme_uploadNetworkTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.5dp"
+        style="@style/Style.CloudBackup.Spinner.Dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_scheme_comparisonMethodTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                style="@style/Style.CloudBackup.TextView.Dark"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-6dp"
+                android:layout_marginTop="-12dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/activity_scheme_fileNameCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:checked="true"
+                    android:enabled="false"/>
+
+                <CheckBox
+                    android:id="@+id/activity_scheme_fileSizeCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_scheme_seeHistoryButton"
+            android:contentDescription="@string/activity_scheme_seeHistoryButtonDescription"
+            android:onClick="seeDates"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="-4dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textSize="12sp"
+            style="@style/Style.CloudBackup.Button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_scheme_addNewScheduleButton"
+            android:contentDescription="@string/activity_scheme_addNewScheduleButtonDescription"
+            android:onClick="addNewSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            style="@style/Style.CloudBackup.Button"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_scheme_scheduleListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="2.5dp"
+        android:scrollbars="vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_scheme_saveButton"
+            android:contentDescription="@string/activity_scheme_saveButtonDescription"
+            android:onClick="save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Button" />
+
+        <View
+            android:id="@+id/schemeActivity_separator"
+            android:layout_width="9dp"
+            android:layout_height="0dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_scheme_cancelButton"
+            android:contentDescription="@string/activity_scheme_cancelButtonDescription"
+            android:onClick="cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Button"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_scheme_removeThisButton"
+            android:contentDescription="@string/activity_scheme_removeThisButtonDescription"
+            android:onClick="removeThis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-4dp"
+            style="@style/Style.CloudBackup.Button"/>
+    </LinearLayout>
+</LinearLayout>

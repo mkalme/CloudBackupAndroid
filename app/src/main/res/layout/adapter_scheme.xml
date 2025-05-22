@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_scheme_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="8dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="6dp"
+    android:paddingBottom="7dp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5.5dp"
+    android:theme="@style/Style.CloudBackup.Adapter">
+
+    <LinearLayout
+        android:id="@+id/adapter_scheme_subLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/adapter_scheme_nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            style="@style/Style.CloudBackup.TextView.Adapter.Light"/>
+
+        <TextView
+            android:id="@+id/adapter_scheme_driveFolderPathTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.5dp"
+            android:layout_marginStart="4dp"
+            style="@style/Style.CloudBackup.TextView.Adapter.Dark"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/adapter_scheme_separatorView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/adapter_scheme_updateButton"
+        android:contentDescription="@string/adapter_scheme_updateButtonDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-1.5dp"
+        android:layout_marginTop="-0.5dp"
+        android:gravity="center_vertical"
+        android:theme="@style/Style.CloudBackup.Button" />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_update_attempt_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="15dp"
+    android:orientation="horizontal"
+    android:theme="@style/Style.CloudBackup.Adapter">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/adapter_update_attempt_nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            style="@style/Style.CloudBackup.TextView.Adapter.Light"/>
+
+        <TextView
+            android:id="@+id/adapter_update_attempt_timeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            style="@style/Style.CloudBackup.TextView.Adapter.Dark"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/adapter_update_attempt_separator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/adapter_update_attempt_icon"
+        android:contentDescription="@string/adapter_update_attempt_imageViewDescription"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:importantForAccessibility="no" />
+</LinearLayout>

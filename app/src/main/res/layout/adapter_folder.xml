@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listItem_folder_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="7dp"
+    android:theme="@style/Style.CloudBackup.Adapter">
+
+    <ImageView
+        android:id="@+id/adapter_folder_imageView"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@mipmap/adapter_folder_browser_folder"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/adapter_folder_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="1dp"
+        android:textSize="17sp"
+        style="@style/Style.CloudBackup.TextView.Adapter.Folder"/>
+</LinearLayout>

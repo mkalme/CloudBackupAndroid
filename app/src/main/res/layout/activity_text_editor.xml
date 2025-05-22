@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.storage.cloudbackup.gui.view.activity.text.editor.TextEditorActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    style="@style/Style.CloudBackup.Activity">
+
+    <EditText
+        android:id="@+id/activity_text_editor_editText"
+        android:hint="@string/activity_textEditor_editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:autofillHints=""
+        android:gravity="start|top"
+        style="@style/Style.CloudBackup.LargeEditText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="bottom">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_text_editor_saveButton"
+            android:contentDescription="@string/activity_textEditor_saveButtonDescription"
+            android:onClick="save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Button" />
+
+        <View
+            android:id="@+id/activity_text_editor_separator"
+            android:layout_width="9dp"
+            android:layout_height="0dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_text_editor_cancelButton"
+            android:contentDescription="@string/activity_textEditor_cancelButtonDescription"
+            android:onClick="cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Button" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/activity_text_editor_zoomInLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1.5dp"
+            android:orientation="horizontal"/>
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:id="@+id/activity_text_editor_zoomOutLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1.5dp"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

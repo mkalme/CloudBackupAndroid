@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_schedule_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialog_schedule_intervalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.5dp"
+        android:textSize="14sp"
+        style="@style/Style.CloudBackup.TextView.Dark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="-3.5dp"
+        android:layout_marginTop="-3.5dp">
+
+        <EditText
+            android:id="@+id/dialog_schedule_skipEditText"
+            android:hint="@string/dialog_schedule_skipEditTextDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:digits="0123456789"
+            android:autofillHints=""
+            android:theme="@style/Style.CloudBackup.EditText"/>
+
+        <Spinner
+            android:id="@+id/dialog_schedule_intervalUnitSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Spinner.Light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_schedule_scheduleEditLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10.5dp"/>
+
+    <TextView
+        android:id="@+id/dialog_schedule_timeOfDayTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10.5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="-3.5dp"
+        android:layout_marginTop="-3.5dp">
+
+        <EditText
+            android:id="@+id/dialog_schedule_timeOfDayEditText"
+            android:hint="@string/dialog_schedule_timeOfDayEditTextDescription"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:enabled="false"
+            android:autofillHints=""
+            android:theme="@style/Style.CloudBackup.EditText"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_schedule_changeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2.5dp"
+            android:theme="@style/Style.CloudBackup.Button"/>
+    </LinearLayout>
+</LinearLayout>

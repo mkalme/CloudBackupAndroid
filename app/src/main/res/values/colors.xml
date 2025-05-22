@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cloud.backup.status.bar.dark">#FF0C0C0C</color>
+
+    <color name="cloud.backup.splash.background.dark">#FF0C0C0C</color>
+
+    <color name="cloud.backup.toolbar.background.dark">#FF0C0C0C</color>
+    <color name="cloud.backup.toolbar.text.dark">#FAFAFA</color>
+
+    <color name="cloud.backup.activity.background.dark">#191919</color>
+    <color name="cloud.backup.dialog.background.dark">#202020</color>
+    <color name="cloud.backup.accent.dark">#03DAC5</color>
+
+    <color name="cloud.backup.button.dark">#2B2B2B</color>
+    <color name="cloud.backup.button.text.enabled.dark">#FAFAFA</color>
+    <color name="cloud.backup.button.text.disabled.dark">#777777</color>
+
+    <color name="cloud.backup.image.button.background.up.dark">#2B2B2B</color>
+    <color name="cloud.backup.image.button.background.down.dark">#505050</color>
+    <color name="cloud.backup.image.button.border.dark">#444444</color>
+
+    <color name="cloud.backup.spinner.background.dark.dark">#282828</color>
+    <color name="cloud.backup.spinner.background.light.dark">#3C3C3C</color>
+
+    <color name="cloud.backup.hinted.text.input.background.dark">#282828</color>
+
+    <color name="cloud.backup.adapter.background.up.dark">#FF202020</color>
+    <color name="cloud.backup.adapter.background.down.dark">#FF2D2D2D</color>
+
+    <color name="cloud.backup.adapter.text.dark.dark">#808080</color>
+    <color name="cloud.backup.adapter.text.light.dark">#CCCCCC</color>
+    <color name="cloud.backup.folder.browser.adapter.text.dark">#E1E1E1</color>
+
+    <color name="cloud.backup.text.light.dark">#FAFAFA</color>
+    <color name="cloud.backup.text.dark.dark">#CCCCCC</color>
+
+    <color name="cloud.backup.activity.main.toolbar.text.dark">#DCDCDC</color>
+    <color name="cloud.backup.activity.settings.switch.background.dark">#202020</color>
+    <color name="cloud.backup.activity.settings.progress.container.dark">#2D2D2D</color>
+    <color name="cloud.backup.activity.settings.progress.bar.dark">#FAFAFA</color>
+
+    <color name="cloud.backup.activity.text.editor.edit.text.background.dark">#232323</color>
+    <color name="cloud.backup.activity.text.editor.scale.button.up.dark">#2B2B2B</color>
+    <color name="cloud.backup.activity.text.editor.scale.button.down.dark">#555555</color>
+    <color name="cloud.backup.activity.text.editor.scale.button.border.dark">#2B2B2B</color>
+    <color name="cloud.backup.activity.text.editor.text.enabled.dark">#FAFAFA</color>
+    <color name="cloud.backup.activity.text.editor.text.disabled.dark">#999999</color>
+
+
+
+
+    <color name="cloud.backup.status.bar.light">#29B2C4</color>
+
+    <color name="cloud.backup.splash.background.light">#FF0C0C0C</color>
+
+    <color name="cloud.backup.toolbar.background.light">#29B2C4</color>
+    <color name="cloud.backup.toolbar.text.light">#FFFFFF</color>
+
+    <color name="cloud.backup.activity.background.light">#FFFCF6</color>
+    <color name="cloud.backup.dialog.background.light">#FFFFFF</color>
+    <color name="cloud.backup.accent.light">#027A6E</color>
+
+    <color name="cloud.backup.button.light">#29B2C4</color>
+    <color name="cloud.backup.button.text.enabled.light">#FFFFFF</color>
+    <color name="cloud.backup.button.text.disabled.light">#91BDC1</color>
+
+    <color name="cloud.backup.image.button.background.up.light">#FFFFFF</color>
+    <color name="cloud.backup.image.button.background.down.light">#FFEEEEEE</color>
+    <color name="cloud.backup.image.button.border.light">#BBBBBB</color>
+
+    <color name="cloud.backup.spinner.background.dark.light">#7BE0E0</color>
+    <color name="cloud.backup.spinner.background.light.light">#6DC6C6</color>
+
+    <color name="cloud.backup.hinted.text.input.background.light">#FFFFFF</color>
+
+    <color name="cloud.backup.adapter.background.up.light">#FFFFFFFF</color>
+    <color name="cloud.backup.adapter.background.down.light">#FFEEEEEE</color>
+
+    <color name="cloud.backup.adapter.text.dark.light">#000000</color>
+    <color name="cloud.backup.adapter.text.light.light">#333333</color>
+    <color name="cloud.backup.folder.browser.adapter.text.light">#222222</color>
+
+    <color name="cloud.backup.text.light.light">#000000</color>
+    <color name="cloud.backup.text.dark.light">#222222</color>
+
+    <color name="cloud.backup.activity.main.toolbar.text.light">#FFFFFF</color>
+    <color name="cloud.backup.activity.settings.switch.background.light">#FFFFFF</color>
+    <color name="cloud.backup.activity.settings.progress.container.light">#BBBBBB</color>
+    <color name="cloud.backup.activity.settings.progress.bar.light">#444444</color>
+
+    <color name="cloud.backup.activity.text.editor.edit.text.background.light">#FFFFFF</color>
+    <color name="cloud.backup.activity.text.editor.scale.button.up.light">#29B2C4</color>
+    <color name="cloud.backup.activity.text.editor.scale.button.down.light">#249CAC</color>
+    <color name="cloud.backup.activity.text.editor.scale.button.border.light">#29B2C4</color>
+    <color name="cloud.backup.activity.text.editor.text.enabled.light">#000000</color>
+    <color name="cloud.backup.activity.text.editor.text.disabled.light">#444444</color>
+</resources>

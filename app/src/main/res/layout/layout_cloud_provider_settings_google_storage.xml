@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/Theme.CloudBackup.Activity.Main">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_cloud_provider_settings_google_storage_bucketTextHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Style.CloudBackup.HintTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/layout_cloud_provider_settings_google_storage_bucketText"
+            android:hint="@string/layout_cloud_provider_settings_google_storage_bucketTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_cloud_provider_settings_google_storage_rootFolderTextHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/Style.CloudBackup.HintTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/layout_cloud_provider_settings_google_storage_rootFolderText"
+            android:hint="@string/layout_cloud_provider_settings_google_storage_rootFolderTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/layout_cloud_provider_settings_google_storage_accountCredentialsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="1dp"
+        android:textSize="15sp"
+        android:theme="@style/Style.CloudBackup.TextView.Dark" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/layout_cloud_provider_settings_google_storage_editCredentialsButton"
+        android:contentDescription="@string/layout_cloud_provider_settings_google_storage_editCredentialsButtonDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-2dp"
+        android:theme="@style/Style.CloudBackup.Button"/>
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.storage.cloudbackup.gui.view.activity.settings.SettingsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    style="@style/Style.CloudBackup.Activity">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/activity_settings_editModeEnabledSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Style.CloudBackup.Switch" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/activity_settings_automaticUpdatingEnabledSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.5dp"
+        style="@style/Style.CloudBackup.Switch" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.5dp"
+        android:padding="6.5dp"
+        android:orientation="horizontal"
+        style="@style/Style.CloudBackup.Activity.Settings.OptionsBackground">
+
+        <TextView
+            android:id="@+id/activity_settings_languageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="1dp"
+            style="@style/Style.CloudBackup.TextView.Light" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/activity_settings_languageSpinner"
+            android:layout_width="200dp"
+            android:layout_height="39dp"
+            style="@style/Style.CloudBackup.Spinner.Light"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.5dp"
+        android:orientation="vertical"
+        android:padding="6.5dp"
+        style="@style/Style.CloudBackup.Activity.Settings.OptionsBackground">
+
+        <TextView
+            android:id="@+id/activity_settings_monthlyMobileDataLimitTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            style="@style/Style.CloudBackup.TextView.Light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3.5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                tools:ignore="LabelFor"
+                android:id="@+id/activity_settings_monthlyMobileDataLimitEditText"
+                android:hint="@string/activity_settings_monthlyMobileDataLimitButtonDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:inputType="numberSigned"
+                android:theme="@style/Style.CloudBackup.EditText"/>
+
+            <Spinner
+                android:id="@+id/activity_settings_monthlyMobileDataLimitUnitSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                style="@style/Style.CloudBackup.Spinner.Light"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_settings_usedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            style="@style/Style.CloudBackup.TextView.Dark"/>
+
+        <LinearLayout
+            android:id="@+id/activity_settings_currentUsedDataContainerLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3.5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal"
+            style="@style/Style.CloudBackup.Activity.Settings.ProgressContainer">
+
+            <LinearLayout
+                android:id="@+id/activity_settings_currentUsedDataProgressLinearLayout"
+                android:layout_width="27dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                style="@style/Style.CloudBackup.Activity.Settings.ProgressBar">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3.5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_settings_currentUsedDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                style="@style/Style.CloudBackup.TextView.Dark"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/activity_settings_maxUsableDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                style="@style/Style.CloudBackup.TextView.Dark"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_settings_saveButton"
+            android:contentDescription="@string/activity_settings_saveButtonDescription"
+            android:onClick="save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Button" />
+
+        <View
+            android:layout_width="9dp"
+            android:layout_height="0dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_settings_cancelButton"
+            android:contentDescription="@string/activity_settings_cancelButtonDescription"
+            android:onClick="cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Style.CloudBackup.Button" />
+    </LinearLayout>
+</LinearLayout>

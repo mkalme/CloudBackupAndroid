@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.storage.cloudbackup.gui.view.activity.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/Style.CloudBackup.Activity.Main">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/activity_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        style="@style/Style.CloudBackup.Main.ToolBar">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="11dp"
+            android:src="@mipmap/app_icon"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:id="@+id/mainActivity_toolbar_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            style="@style/Style.CloudBackup.Activity.Main.ToolBar.TextView" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/activity_main_openSettingsButton"
+                android:contentDescription="@string/activity_main_openSettingsButtonDescription"
+                android:onClick="openSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Style.CloudBackup.Button"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/activity_main_openHistoryButton"
+                android:contentDescription="@string/activity_main_openHistoryButtonDescription"
+                android:onClick="openHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="-4dp"
+                style="@style/Style.CloudBackup.Button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_main_cloudProviderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_main_addNewUpdatePlanButton"
+            android:contentDescription="@string/activity_main_addNewUpdatePlanButtonDescription"
+            android:onClick="addNewUpdatePlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            style="@style/Style.CloudBackup.Button"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_main_schemeRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+</LinearLayout>

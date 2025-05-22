@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Cloud Backup</string>
+
+    <string name="activity_cloud_provider_settings_SaveButtonDescription">Save</string>
+    <string name="activity_cloud_provider_settings_cancelButtonDescription">Cancel</string>
+
+    <string name="activity_folder_browser_selectCurrentFolderButtonDescription">Select current folder</string>
+    <string name="activity_folder_browser_closeButtonDescription">Close</string>
+
+    <string name="activity_history_saveButtonDescription">Save</string>
+    <string name="activity_history_closeButtonDescription">Close</string>
+    <string name="activity_history_clearHistoryButtonDescription">Clear history</string>
+
+    <string name="activity_main_openSettingsButtonDescription">Open settings</string>
+    <string name="activity_main_openHistoryButtonDescription">Open history</string>
+    <string name="activity_main_addNewUpdatePlanButtonDescription">Add new update plan</string>
+
+    <string name="activity_scheme_fileFilterButtonDescription">File filter</string>
+    <string name="activity_scheme_seeHistoryButtonDescription">See history</string>
+    <string name="activity_scheme_addNewScheduleButtonDescription">Add new schedule</string>
+    <string name="activity_scheme_saveButtonDescription">Save</string>
+    <string name="activity_scheme_cancelButtonDescription">Cancel</string>
+    <string name="activity_scheme_removeThisButtonDescription">Remove this</string>
+    <string name="activity_scheme_nameTextDescription">Name</string>
+    <string name="activity_scheme_driveFolderTextDescription">Drive folder</string>
+
+    <string name="activity_settings_monthlyMobileDataLimitButtonDescription">Limit</string>
+    <string name="activity_settings_saveButtonDescription">Save</string>
+    <string name="activity_settings_cancelButtonDescription">Cancel</string>
+
+    <string name="activity_textEditor_editTextDescription" />
+    <string name="activity_textEditor_saveButtonDescription">Save</string>
+    <string name="activity_textEditor_cancelButtonDescription">Cancel</string>
+
+    <string name="activity_update_attempt_localFolderTextDescription">Local folder</string>
+    <string name="activity_update_attempt_driveFolderTextDescription">Drive folder</string>
+    <string name="activity_update_attempt_beginUpdateTextDescription">Begin update</string>
+    <string name="activity_update_attempt_finishedUpdateTextDescription">Finished update</string>
+    <string name="activity_update_attempt_typeTextDescription">Type</string>
+    <string name="activity_update_attempt_resultTextDescription">Result</string>
+    <string name="activity_update_attempt_unsuccessfulFilesTextDescription">Unsuccessful files</string>
+    <string name="activity_update_attempt_unsuccessfulFilesButtonDescription">View files</string>
+    <string name="activity_update_attempt_successfulFilesTextDescription">Successful files</string>
+    <string name="activity_update_attempt_successfulFilesButtonDescription">View files</string>
+    <string name="activity_update_attempt_viewErrorsButtonDescription">View errors</string>
+    <string name="activity_update_attempt_closeButtonDescription">Close</string>
+
+    <string name="activity_update_plan_browseButtonDescription">Browse</string>
+    <string name="activity_update_plan_addNewSchemeButtonDescription">Add new scheme</string>
+    <string name="activity_update_plan_saveButtonDescription">Save</string>
+    <string name="activity_update_plan_closeButtonDescription">Close</string>
+    <string name="activity_update_plan_removeThisButtonDescription">Remove this</string>
+    <string name="activity_update_plan_nameTextButtonDescription">Name</string>
+    <string name="activity_update_plan_folderTextButtonDescription">Folder</string>
+
+    <string name="adapter_schedule_removeButtonDescription">Remove</string>
+
+    <string name="adapter_scheme_updateButtonDescription">Update</string>
+
+    <string name="adapter_update_plan_updateButtonDescription">Update</string>
+
+    <string name="adapter_update_attempt_imageViewDescription">Cloud provider icon</string>
+
+    <string name="dialog_filter_filterEditTextDescription">Filter</string>
+    <string name="dialog_filter_minFileSizeEditTextDescription">Min file size</string>
+    <string name="dialog_filter_maxFileSizeEditTextDescription">Max file size</string>
+
+    <string name="dialog_schedule_skipEditTextDescription">Skip</string>
+    <string name="dialog_schedule_timeOfDayEditTextDescription">Time of day</string>
+
+    <string name="layout_cloud_provider_settings_google_storage_bucketTextDescription">Bucket</string>
+    <string name="layout_cloud_provider_settings_google_storage_rootFolderTextDescription">Root folder</string>
+    <string name="layout_cloud_provider_settings_google_storage_editCredentialsButtonDescription">Edit credentials</string>
+
+    <string name="layout_cloud_provider_settings_s3_bucketTextDescription">Bucket</string>
+    <string name="layout_cloud_provider_settings_s3_rootFolderTextDescription">Root folder</string>
+    <string name="layout_cloud_provider_settings_s3_accessKeyTextDescription">Access key</string>
+    <string name="layout_cloud_provider_settings_s3_secretKeyTextDescription">Secret key</string>
+
+    <string name="layout_cloud_provider_settings_demo_rootFolderTextDescription">Root folder</string>
+    <string name="layout_cloud_provider_settings_demo_simulatedUploadTextEditDescription">Upload rate</string>
+    <string name="layout_cloud_provider_settings_demo_simulatedLatencyTextEditDescription">Latency</string>
+    <string name="layout_cloud_provider_settings_demo_editUploadedFilesButtonDescription">Edit uploaded files</string>
+    <string name="layout_cloud_provider_settings_demo_clearUploadedFilesButtonDescription">Clear uploaded files</string>
+
+    <string name="layout_schedule_yearly_dayOfYearTextDescription">Day of year</string>
+</resources>

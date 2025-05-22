@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/Theme.CloudBackup.Activity.Main">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_cloud_provider_settings_s3_bucketTextHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Style.CloudBackup.HintTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/layout_cloud_provider_settings_s3_bucketText"
+            android:hint="@string/layout_cloud_provider_settings_s3_bucketTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_cloud_provider_settings_s3_rootFolderTextHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/Style.CloudBackup.HintTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/layout_cloud_provider_settings_s3_rootFolderText"
+            android:hint="@string/layout_cloud_provider_settings_s3_rootFolderTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_cloud_provider_settings_s3_accessKeyTextHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:theme="@style/Style.CloudBackup.HintTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/layout_cloud_provider_settings_s3_accessKeyText"
+            android:hint="@string/layout_cloud_provider_settings_s3_accessKeyTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_cloud_provider_settings_s3_secretKeyTextHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/Style.CloudBackup.HintTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/layout_cloud_provider_settings_s3_secretKeyText"
+            android:hint="@string/layout_cloud_provider_settings_s3_secretKeyTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

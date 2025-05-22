@@ -1,0 +1,152 @@
+<resources>
+    <style name="Theme.CloudBackup.Activity.Main" parent="Theme.MaterialComponents.DayNight">
+        <item name="actionBarTheme">@style/Style.CloudBackup.Main.ToolBar</item>
+        <item name="android:statusBarColor">@color/cloud.backup.status.bar.dark</item>
+    </style>
+
+    <style name="Style.CloudBackup.Main.ToolBar" parent="@style/ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="android:background">@color/cloud.backup.toolbar.background.dark</item>
+        <item name="android:textColorPrimary">@color/cloud.backup.toolbar.text.dark</item>
+    </style>
+
+    <style name="Style.CloudBackup.Activity.Main.ToolBar.TextView" parent="">
+        <item name="android:textColor">@color/cloud.backup.activity.main.toolbar.text.dark</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Style.CloudBackup.Activity.Main" parent="">
+        <item name="android:background">@color/cloud.backup.activity.background.dark</item>
+    </style>
+
+    <style name="Theme.CloudBackup.Activity" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:statusBarColor">@color/cloud.backup.status.bar.dark</item>
+        <item name="actionOverflowMenuStyle">@style/Style.CloudBackup.Activity.PopupMenu</item>
+        <item name="actionBarTheme">@style/Style.CloudBackup.Main.ToolBar</item>
+    </style>
+
+    <style name="Style.CloudBackup.Activity.PopupMenu" parent="@style/Widget.MaterialComponents.PopupMenu.Overflow">
+        <item name="android:popupBackground">@color/cloud.backup.toolbar.background.dark</item>
+    </style>
+
+    <style name="Style.CloudBackup.Activity" parent="">
+        <item name="android:background">@color/cloud.backup.activity.background.dark</item>
+    </style>
+
+    <style name="Style.CloudBackup.Activity.Settings.OptionsBackground" parent="">
+        <item name="android:background">@color/cloud.backup.activity.settings.switch.background.dark</item>
+    </style>
+
+    <style name="Style.CloudBackup.Activity.Settings.ProgressContainer" parent="">
+        <item name="android:background">@color/cloud.backup.activity.settings.progress.container.dark</item>
+    </style>
+
+    <style name="Style.CloudBackup.Activity.Settings.ProgressBar" parent="">
+        <item name="android:background">@color/cloud.backup.activity.settings.progress.bar.dark</item>
+    </style>
+
+
+    <style name="Style.CloudBackup.SplashScreen" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:windowBackground">@color/cloud.backup.splash.background.dark</item>
+        <item name="android:statusBarColor">@color/cloud.backup.splash.background.dark</item>
+    </style>
+
+    <style name="Style.CloudBackup.Button" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/cloud.backup.button.dark</item>
+        <item name="android:textColor">@drawable/text_color_button_dark</item>
+
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+
+        <item name="android:layout_marginLeft">-4dp</item>
+        <item name="android:layout_marginTop">-4dp</item>
+
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing">0.09</item>
+    </style>
+
+    <style name="Style.CloudBackup.DialogButton" parent="Style.CloudBackup.Button">
+        <item name="android:textColor">@color/cloud.backup.text.light.dark</item>
+    </style>
+
+    <style name="Style.CloudBackup.TextView.Light" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:textColor">@color/cloud.backup.text.light.dark</item>
+        <item name="android:textSize">18.5sp</item>
+    </style>
+
+    <style name="Style.CloudBackup.TextView.Dark" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:textColor">@color/cloud.backup.text.dark.dark</item>
+        <item name="android:textSize">18.5sp</item>
+    </style>
+
+    <style name="Style.CloudBackup.TextView.Adapter.Light" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:textColor">@color/cloud.backup.adapter.text.light.dark</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Style.CloudBackup.TextView.Adapter.Dark" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:textColor">@color/cloud.backup.adapter.text.dark.dark</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Style.CloudBackup.TextView.Adapter.Folder" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:textColor">@color/cloud.backup.folder.browser.adapter.text.dark</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="Style.CloudBackup.Adapter" parent="Theme.AppCompat.DayNight">
+        <item name="android:background">@color/cloud.backup.adapter.background.up.dark</item>
+    </style>
+
+    <style name="Style.CloudBackup.HintTextInput" parent="Widget.Design.TextInputLayout">
+        <item name="colorPrimary">@color/cloud.backup.accent.dark</item>
+        <item name="android:backgroundTint">@color/cloud.backup.hinted.text.input.background.dark</item>
+        <item name="android:editTextColor">@color/cloud.backup.text.light.dark</item>
+    </style>
+
+    <style name="Style.CloudBackup.EditText" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorOnPrimary">@color/cloud.backup.accent.dark</item>
+        <item name="colorSecondary">@color/cloud.backup.accent.dark</item>
+        <item name="colorSecondaryVariant">@color/cloud.backup.accent.dark</item>
+        <item name="android:editTextColor">@color/cloud.backup.text.light.dark</item>
+        <item name="android:inputType">numberSigned</item>
+    </style>
+
+    <style name="Style.CloudBackup.LargeEditText" parent="">
+        <item name="android:background">@color/cloud.backup.activity.text.editor.edit.text.background.dark</item>
+    </style>
+
+    <style name="Style.CloudBackup.Spinner.Light" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:background">@color/cloud.backup.spinner.background.light.dark</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Style.CloudBackup.Spinner.Dark" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:background">@color/cloud.backup.spinner.background.dark.dark</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Style.CloudBackup.Switch" parent="">
+        <item name="colorControlActivated">@color/cloud.backup.accent.dark</item>
+        <item name="android:textColor">@color/cloud.backup.text.light.dark</item>
+        <item name="android:textSize">18.5sp</item>
+        <item name="android:padding">13.5dp</item>
+        <item name="android:background">@color/cloud.backup.activity.settings.switch.background.dark</item>
+    </style>
+
+    <style name="Style.CloudBackup.Dialog" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:textColor">@color/cloud.backup.text.light.dark</item>
+        <item name="materialButtonStyle">@style/Style.CloudBackup.DialogButton</item>
+        <item name="android:timePickerStyle">@style/Style.CloudBackup.DatePicker</item>
+        <item name="android:background">@color/cloud.backup.dialog.background.dark</item>
+        <item name="android:backgroundTint">@color/cloud.backup.dialog.background.dark</item>
+    </style>
+
+    <style name="Style.CloudBackup.DatePicker" parent="@android:style/Widget.Material.Light.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+        <item name="android:scaleX">1.2</item>
+        <item name="android:scaleY">1.2</item>
+    </style>
+</resources>

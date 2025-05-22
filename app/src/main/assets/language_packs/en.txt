@@ -1,0 +1,212 @@
+en:English (English)
+## End header
+
+## Miscellaneous
+localFolderExplorer.internal:Internal
+localFolderExplorer.sd:SD
+
+## All activities
+folderBrowserActivity.title:Browse for a folder
+folderBrowserActivity.selectCurrentFolderButton:Select current folder
+folderBrowserActivity.closeButton:Close
+
+settingsActivity.title:Edit app settings
+settingsActivity.editModeEnabledSwitch:Edit mode enabled
+settingsActivity.automaticUpdatingEnabledSwitch:Automatic updating enabled
+settingsActivity.languageText:Language
+settingsActivity.monthlyMobileDataLimitTextView:Monthly mobile data limit
+settingsActivity.usedText:Used
+settingsActivity.overLimitText:Over limit
+settingsActivity.saveButton:Save
+settingsActivity.cancelButton:Cancel
+
+updateHistoryActivity.title.enabled:Update history
+updateHistoryActivity.title.disabled:View update history
+updateHistoryActivity.clearHistoryButton:Clear
+updateHistoryActivity.saveButton:Save
+updateHistoryActivity.cancelButton.enabled:Cancel
+updateHistoryActivity.cancelButton.disabled:Close
+updateHistoryActivity.clearPrompt:Are you sure you want to clear all update history?
+
+updateAttemptActivity.title:View update attempt
+updateAttemptActivity.localFolderTextHint:Local folder
+updateAttemptActivity.driveFolderTextHint:Drive folder
+updateAttemptActivity.updateBeginTextView:Update began
+updateAttemptActivity.updateFinishedTextView:Update finished
+updateAttemptActivity.typeTextView:Type
+updateAttemptActivity.type.automatic:Automatic
+updateAttemptActivity.type.userInitiated:User initiated
+updateAttemptActivity.resultTextView:Result
+updateAttemptActivity.result.successful:Successful
+updateAttemptActivity.result.unsuccessful:Unsuccessful
+updateAttemptActivity.result.partiallySuccessful:Partially successful
+updateAttemptActivity.result.unfinished:Unfinished
+updateAttemptActivity.successfulFilesTextView:Files uploaded
+updateAttemptActivity.successfulFilesButton:View files
+updateAttemptActivity.successfulFilesView.title:files
+updateAttemptActivity.unsuccessfulFilesTextView:Files unsuccessfully uploaded
+updateAttemptActivity.unsuccessfulFilesButton:View files
+updateAttemptActivity.unsuccessfulFilesView.title:files
+updateAttemptActivity.errorButton:View errors
+updateAttemptActivity.errorView.title:errors
+updateAttemptActivity.closeButton:Close
+
+mainActivity.title:Cloud Backup
+mainActivity.openSettingsButton:Open settings
+mainActivity.openHistoryButton:Update history
+mainActivity.addNewUpdatePlanButton:Add new update plan
+
+cloudProviderSettingsActivity.title.enabled:Edit
+cloudProviderSettingsActivity.title.disabled:View
+cloudProviderSettingsActivity.saveButton:Save
+cloudProviderSettingsActivity.cancelButton.enabled:Cancel
+cloudProviderSettingsActivity.cancelButton.disabled:Close
+
+textEditorActivity.title.enabled:Edit
+textEditorActivity.title.disabled:View
+textEditorActivity.saveButton:Save
+textEditorActivity.cancelButton.enabled:Cancel
+textEditorActivity.cancelButton.disabled:Close
+
+updatePlanActivity.title.enabled:Edit update plan
+updatePlanActivity.title.disabled:View update plan
+updatePlanActivity.nameTextHint:Name
+updatePlanActivity.folderTextHint:Folder
+updatePlanActivity.browseButton:Browse
+updatePlanActivity.addNewSchemeButton:Add new scheme
+updatePlanActivity.saveButton:Save
+updatePlanActivity.cancelButton.enabled:Cancel
+updatePlanActivity.cancelButton.disabled:Close
+updatePlanActivity.removeThisButton:Remove this
+updatePlanActivity.removePrompt:Are you sure you want to remove this update plan?
+
+schemeActivity.title.enabled:Edit scheme
+schemeActivity.title.disabled:View scheme
+schemeActivity.nameTextHint:Name
+schemeActivity.driveFolderHint:Drive folder
+schemeActivity.fileFilterButton.enabled:Edit File filter
+schemeActivity.fileFilterButton.disabled:View file filter
+schemeActivity.networkTypeOnUploadTextView:Network type on upload
+schemeActivity.networkTypeSpinner.wifi:Wi-Fi
+schemeActivity.networkTypeSpinner.mobileData:Mobile data
+schemeActivity.networkTypeSpinner.both:Both
+schemeActivity.comparisonMethodTextView:Comparison method
+schemeActivity.fileNameCheckBox:File name
+schemeActivity.fileSizeCheckBox:File size
+schemeActivity.seeHistoryButton:See history
+schemeActivity.addNewScheduleButton:Add new schedule
+schemeActivity.saveButton:Save
+schemeActivity.cancelButton.enabled:Cancel
+schemeActivity.cancelButton.disabled:Close
+schemeActivity.removeThisButton:Remove this
+schemeActivity.removePrompt:Are you sure you want to remove the scheme?
+schemeActivity.removeSchedulePrompt:Are you sure you want to remove the schedule?
+schemeActivity.seeDates.lastUpdated:Last updated
+schemeActivity.seeDates.nextUpdate:Next planned update
+schemeActivity.seeDates.never:Never
+
+## All dialogs
+fileFilterDialog.title.enabled:Edit file filter
+fileFilterDialog.title.disabled:View file filter
+fileFilterDialog.fileNameFilterTextView:File name filter
+fileFilterDialog.minimumFileSizeTextView:Minimum file size
+fileFilterDialog.maximumFileSizeTextView:Maximum file size (not included)
+fileFilterDialog.cancelButton:Cancel
+fileFilterDialog.okButton:Ok
+
+scheduleDialog.title.enabled:Edit schedule
+scheduleDialog.title.disabled:View schedule
+scheduleDialog.intervalTextView:Interval (once every...)
+scheduleDialog.typeSpinner.daily:Daily
+scheduleDialog.typeSpinner.weekly:Weekly
+scheduleDialog.typeSpinner.monthly:Monthly
+scheduleDialog.typeSpinner.yearly:Yearly
+scheduleDialog.timeOfDayTextView:Time of day
+scheduleDialog.selectTime:Select time
+scheduleDialog.changeButton:Change
+scheduleDialog.cancelButton:Cancel
+scheduleDialog.okButton:Ok
+
+scheduleDialog.weekly.dayOfTheWeekTextView:Day of the week
+scheduleDialog.weekly.weekDaySpinner.monday:Monday
+scheduleDialog.weekly.weekDaySpinner.tuesday:Tuesday
+scheduleDialog.weekly.weekDaySpinner.wednesday:Wednesday
+scheduleDialog.weekly.weekDaySpinner.thursday:Thursday
+scheduleDialog.weekly.weekDaySpinner.friday:Friday
+scheduleDialog.weekly.weekDaySpinner.saturday:Saturday
+scheduleDialog.weekly.weekDaySpinner.sunday:Sunday
+
+scheduleDialog.monthly.dayOfTheMonthTextView:Day of the month
+
+scheduleDialog.yearly.dayOfTheYearTextView:Day of the year
+scheduleDialog.yearly.monthSpinner.january:January
+scheduleDialog.yearly.monthSpinner.february:February
+scheduleDialog.yearly.monthSpinner.march:March
+scheduleDialog.yearly.monthSpinner.april:April
+scheduleDialog.yearly.monthSpinner.may:May
+scheduleDialog.yearly.monthSpinner.june:June
+scheduleDialog.yearly.monthSpinner.july:July
+scheduleDialog.yearly.monthSpinner.august:August
+scheduleDialog.yearly.monthSpinner.september:September
+scheduleDialog.yearly.monthSpinner.october:October
+scheduleDialog.yearly.monthSpinner.november:November
+scheduleDialog.yearly.monthSpinner.december:December
+
+promptDialog.yesButton:Yes
+promptDialog.noButton.enabled:No
+promptDialog.noButton.disabled:Ok
+
+## All layouts
+googleCloudProviderSettings.bucketTextHint:Bucket
+googleCloudProviderSettings.rootFolderTextHint:Root folder
+googleCloudProviderSettings.credentialsTextView:Credentials
+googleCloudProviderSettings.editCredentialsButton.enabled:Edit credentials
+googleCloudProviderSettings.editCredentialsButton.disabled:View credentials
+googleCloudProviderSettings.editCredentialsActivity:credentials
+
+amazonCloudProviderSettings.bucketTextHint:Bucket
+amazonCloudProviderSettings.rootFolderTextHint:Root folder
+amazonCloudProviderSettings.accessKeyTextHint:Access key
+amazonCloudProviderSettings.secretKeyTextHint:Secret key
+
+demoCloudProviderSettings.rootFolderTextHint:Root folder
+demoCloudProviderSettings.simulatedUploadRateTextView:Simulated upload rate (in one second)
+demoCloudProviderSettings.simulatedLatencyTextView:Simulated latency (in milliseconds)
+demoCloudProviderSettings.uploadedFilesTextView:Uploaded files
+demoCloudProviderSettings.introduceRandomErrors:Introduce random errors
+demoCloudProviderSettings.trackUploadedFiles:Track uploaded files
+demoCloudProviderSettings.editUploadedFilesButton.enabled:Edit uploaded files
+demoCloudProviderSettings.editUploadedFilesButton.disabled:View uploaded files
+demoCloudProviderSettings.editUploadedFilesActivity:uploaded files
+demoCloudProviderSettings.clearUploadedFilesButton:Clear
+
+## All new items
+updatePlan.new:New update plan
+scheme.new:New scheme
+
+## All adapters
+updatePlanAdapter.updateButton:Update
+schemeAdapter.updateButton:Update
+scheduleAdapter.removeButton:Remove
+
+## All notifications
+notification.updateBegin.title:Update started
+notification.updateBegin.message:Searching for files
+notification.updateStop.successful.moreThanZero.message:Files updated
+notification.updateStop.successful.zero.message:All files are already up to date
+notification.updateStop.successful.title:Update finished
+notification.updateStop.unsuccessful.title:Cancelled
+notification.fileBeginUpdate.title:Uploading
+notification.fileUpdateCanceled.title:File canceled
+notification.fileUpdateCanceled.secondMessage:Canceled
+notification.fileUpdateStop.successful.title:Uploading
+notification.fileUpdateStop.successful.secondMessage:Done
+notification.fileUpdateStop.unsuccessful.title:Cancelled
+
+## All values
+update.error.noInternetConnection:No internet connection
+update.error.inadequateInternetConnection:Inadequate internet connection
+update.error.monthlyMobileDataExceeded:Monthly mobile data limit exceeded
+update.error.directoryDoesNotExist:Directory does not exist
+update.error.allSchemesUnsuccessful:All schemes are unsuccessful
+update.error.other:Other
